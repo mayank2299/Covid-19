@@ -1,5 +1,8 @@
+import 'package:Covid_19/Query.dart';
 import 'package:Covid_19/help.dart';
 import 'package:Covid_19/precautions.dart';
+import 'package:Covid_19/vaccination.dart';
+import 'package:Covid_19/youtube.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'state.dart';
@@ -9,16 +12,20 @@ import 'donate.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:gradient_text/gradient_text.dart';
 import 'helperclass.dart';
+import 'aboutus.dart';
+import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
 class covidscreen1 extends StatefulWidget {
+
   final data1;
   final worlddata;
-  covidscreen1({this.data1, this.worlddata});
+  covidscreen1({this.data1, this.worlddata,});
   @override
   _covidscreen1State createState() => _covidscreen1State();
 }
 
 class _covidscreen1State extends State<covidscreen1> {
+
   var active;
   var death;
   var recovered;
@@ -29,6 +36,7 @@ class _covidscreen1State extends State<covidscreen1> {
     super.initState();
     updatedata(widget.data1, widget.worlddata);
   }
+
 
   void updatedata(dynamic coviddata, dynamic worlddata) {
     setState(() {
@@ -68,6 +76,26 @@ class _covidscreen1State extends State<covidscreen1> {
                         image: DecorationImage(
                             image: AssetImage("images/head.gif"),
                             fit: BoxFit.cover)),
+                  ),
+                  ListTile(
+                    title: Text(
+                      "About Me",
+                      style: GoogleFonts.lato(
+                          fontWeight: FontWeight.bold, fontSize: 22),
+                    ),
+                    leading: Text(
+                      "👨‍💻",
+                      style: TextStyle(fontSize: 35),
+                    ),
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                        return about();
+                      }));
+                      // Update the state of the app
+                      // ...
+                      // Then close the drawer
+                    },
                   ),
                   ListTile(
                     title: Text(
@@ -135,6 +163,26 @@ class _covidscreen1State extends State<covidscreen1> {
                   ),
                   ListTile(
                     title: Text(
+                      "Query Form",
+                      style: GoogleFonts.lato(
+                          fontWeight: FontWeight.bold, fontSize: 22),
+                    ),
+                    leading: Text(
+                      "👨‍",
+                      style: TextStyle(fontSize: 35),
+                    ),
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                            return Query();
+                          }));
+                      // Update the state of the app
+                      // ...
+                      // Then close the drawer
+                    },
+                  ),
+                  ListTile(
+                    title: Text(
                       "FAQ ",
                       style: GoogleFonts.lato(
                           fontWeight: FontWeight.bold, fontSize: 22),
@@ -175,6 +223,26 @@ class _covidscreen1State extends State<covidscreen1> {
                   ),
                   ListTile(
                     title: Text(
+                      "Vaccination",
+                      style: GoogleFonts.lato(
+                          fontWeight: FontWeight.bold, fontSize: 22),
+                    ),
+                    leading: Text(
+                      "💉",
+                      style: TextStyle(fontSize: 35),
+                    ),
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                            return Vaccine();
+                          }));
+                      // Update the state of the app
+                      // ...
+                      // Then close the drawer
+                    },
+                  ),
+                  ListTile(
+                    title: Text(
                       "Precautions",
                       style: GoogleFonts.lato(
                           fontWeight: FontWeight.bold, fontSize: 22),
@@ -188,6 +256,26 @@ class _covidscreen1State extends State<covidscreen1> {
                           MaterialPageRoute(builder: (context) {
                         return Precautions();
                       }));
+                      // Update the state of the app
+                      // ...
+                      // Then close the drawer
+                    },
+                  ),
+                  ListTile(
+                    title: Text(
+                      "News",
+                      style: GoogleFonts.lato(
+                          fontWeight: FontWeight.bold, fontSize: 22),
+                    ),
+                    leading: Text(
+                      "📻",
+                      style: TextStyle(fontSize: 35),
+                    ),
+                    onTap: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) {
+                            return YouTubeScreen();
+                          }));
                       // Update the state of the app
                       // ...
                       // Then close the drawer

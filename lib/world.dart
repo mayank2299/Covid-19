@@ -1466,9 +1466,9 @@ class _worldState extends State<world> {
         turkeycase = worlddata1['Countries'][176]["TotalConfirmed"];
         turkeydeath = worlddata1['Countries'][176]["TotalDeaths"];
         turkeyrec = worlddata1['Countries'][176]["TotalRecovered"];
-        ugandacase = worlddata1['Countries'][177]["TotalConfirmed"];
-        ugandadeath = worlddata1['Countries'][177]["TotalDeaths"];
-        ugandarec = worlddata1['Countries'][177]["TotalRecovered"];
+        ugandacase = worlddata1['Countries'][171]["TotalConfirmed"];
+        ugandadeath = worlddata1['Countries'][171]["TotalDeaths"];
+        ugandarec = worlddata1['Countries'][171]["TotalRecovered"];
         UAEcase = worlddata1['Countries'][179]["TotalConfirmed"];
         UAEdeath = worlddata1['Countries'][179]["TotalDeaths"];
         UAErec = worlddata1['Countries'][179]["TotalRecovered"];
@@ -1481,21 +1481,21 @@ class _worldState extends State<world> {
         UZcase = worlddata1['Countries'][184]["TotalConfirmed"];
         UZdeath = worlddata1['Countries'][184]["TotalDeaths"];
         UZrec = worlddata1['Countries'][184]["TotalRecovered"];
-        VEcase = worlddata1['Countries'][186]["TotalConfirmed"];
-        VEdeath = worlddata1['Countries'][186]["TotalDeaths"];
-        VErec = worlddata1['Countries'][186]["TotalRecovered"];
-        VNcase = worlddata1['Countries'][187]["TotalConfirmed"];
-        VNdeath = worlddata1['Countries'][187]["TotalDeaths"];
-        VNrec = worlddata1['Countries'][187]["TotalRecovered"];
-        YEcase = worlddata1['Countries'][189]["TotalConfirmed"];
-        YEdeath = worlddata1['Countries'][189]["TotalDeaths"];
-        YErec = worlddata1['Countries'][189]["TotalRecovered"];
-        zambiacase = worlddata1['Countries'][190]["TotalConfirmed"];
-        zambiadeath = worlddata1['Countries'][190]["TotalDeaths"];
-        zambiarec = worlddata1['Countries'][190]["TotalRecovered"];
-        ZWcase = worlddata1['Countries'][191]["TotalConfirmed"];
-        ZWdeath = worlddata1['Countries'][191]["TotalDeaths"];
-        ZWrec = worlddata1['Countries'][191]["TotalRecovered"];
+        VEcase = worlddata1['Countries'][183]["TotalConfirmed"];
+        VEdeath = worlddata1['Countries'][183]["TotalDeaths"];
+        VErec = worlddata1['Countries'][183]["TotalRecovered"];
+        VNcase = worlddata1['Countries'][184]["TotalConfirmed"];
+        VNdeath = worlddata1['Countries'][184]["TotalDeaths"];
+        VNrec = worlddata1['Countries'][184]["TotalRecovered"];
+        YEcase = worlddata1['Countries'][185]["TotalConfirmed"];
+        YEdeath = worlddata1['Countries'][185]["TotalDeaths"];
+        YErec = worlddata1['Countries'][185]["TotalRecovered"];
+        zambiacase = worlddata1['Countries'][186]["TotalConfirmed"];
+        zambiadeath = worlddata1['Countries'][186]["TotalDeaths"];
+        zambiarec = worlddata1['Countries'][186]["TotalRecovered"];
+        ZWcase = worlddata1['Countries'][187]["TotalConfirmed"];
+        ZWdeath = worlddata1['Countries'][187]["TotalDeaths"];
+        ZWrec = worlddata1['Countries'][187]["TotalRecovered"];
       }
     });
   }
@@ -1531,7 +1531,7 @@ class _worldState extends State<world> {
             mainAxisAlignment: MainAxisAlignment.spaceEvenly,
             children: [
               Image(
-                image: AssetImage('images/world.gif'),
+                image: AssetImage('images/globe.gif'),
               ),
               SizedBox(
                 height: 10,
@@ -1543,7 +1543,7 @@ class _worldState extends State<world> {
                     Text(
                       "",
                       style:
-                          GoogleFonts.lato(fontSize: 25, color: Colors.white),
+                          GoogleFonts.lato(fontSize: 18, color: Colors.blue),
                     ),
                     Text(
                       "Cases",
@@ -1592,7 +1592,7 @@ class _worldState extends State<world> {
                     Text(
                       "$brazilcase",
                       style: GoogleFonts.lato(
-                          fontSize: 20, color: Color(0xffFE073A)),
+                          fontSize: 18, color: Color(0xffFE073A)),
                     ),
                     Text(
                       "$brazildeath",
@@ -1602,7 +1602,7 @@ class _worldState extends State<world> {
                     Text(
                       "$brazilrecovered",
                       style: GoogleFonts.lato(
-                          fontSize: 20, color: Color(0xff28A645)),
+                          fontSize: 18, color: Color(0xff28A645)),
                     ),
                   ]),
                   TableRow(children: [
@@ -1624,7 +1624,7 @@ class _worldState extends State<world> {
                     Text(
                       "$indiarec",
                       style: GoogleFonts.lato(
-                          fontSize: 20, color: Color(0xff28A645)),
+                          fontSize: 18, color: Color(0xff28A645)),
                     ),
                   ]),
                   TableRow(children: [

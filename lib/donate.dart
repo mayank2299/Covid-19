@@ -124,10 +124,10 @@ class _donateState extends State<donate> {
                         borderSide: BorderSide(color: Colors.blueAccent),
                         borderRadius: BorderRadius.all(Radius.circular(50)),
                       ),
-                      prefixIcon: Icon(Icons.attach_money),
                       fillColor: Colors.white,
                       filled: true,
                       hintText: "Enter the Amount Please "),
+                      textAlign: TextAlign.center,
                 ),
               ),
               Container(
